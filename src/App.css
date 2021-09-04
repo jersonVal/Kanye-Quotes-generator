@@ -14,6 +14,7 @@
   /* background-color: red; */
   display: grid;
   place-content: center;
+  transition: 0.50s ease-in-out;
 }
 
 .container{
@@ -42,7 +43,7 @@
   line-height: 1;
   padding-bottom: 0.5rem;
   color: red;
-  transition: 0.25s;
+  transition: 0.50s ease-in-out;
 }
 
 .author{
@@ -50,7 +51,7 @@
   text-align: end;
   color: red;
   font-weight: 100;
-  transition: 0.25s;
+  transition: 0.5s ease-in-out;
 }
 
 .author p::before{
@@ -74,7 +75,7 @@ button{
   padding: 0.7rem 1rem;
   border-radius: 2px;
   color: blanchedalmond;
-  transition: 0.25s;
+  transition: 0.5s ease-in-out;
 }
 
 button:hover,
@@ -93,7 +94,7 @@ a{
   padding: 0 0.7rem;
   color: blanchedalmond;
   border-radius: 2px;
-  transition: 0.25s;
+  transition: 0.5s ease-in-out;
 }
 
 .btn:nth-child(2){
