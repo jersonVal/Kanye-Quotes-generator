@@ -1,38 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+HarunoUmi&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Kaisei HarunoUmi', serif;
+}
+
 .App {
   text-align: center;
+  width: 100vw;
+  height: 100vh;
+  /* background-color: red; */
+  display: grid;
+  place-content: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container{
+  width: 55vw;
+  background-color: gainsboro;
+  border-radius: 5px;
+  padding: 2rem;
+  position: relative;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container::after{
+  content: 'Made By Jerson Valencia';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50%;
+  height: 30px;
+  margin-top: 1rem;
+  border-bottom: 1px solid black;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.quote{
+  font-size: 1.7rem;
+  font-weight: 400;
+  line-height: 1;
+  padding-bottom: 0.5rem;
+  color: red;
+  transition: 0.25s;
+}
+
+.author{
+  width: 100%;
+  text-align: end;
+  color: red;
+  font-weight: 100;
+  transition: 0.25s;
+}
+
+.author p::before{
+  content: '-';
+  padding-right: 0.2rem;
+}
+
+.buttons{
+  width: 100%;
+  margin-top: 1rem;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: flex-start;
 }
 
-.App-link {
-  color: #61dafb;
+button{
+  margin-left: auto;
+  background-color: red;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0.7rem 1rem;
+  border-radius: 2px;
+  color: blanchedalmond;
+  transition: 0.25s;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button:hover,
+.btn:hover{
+  opacity: 0.8;
 }
+
+a{
+  text-decoration: none;
+}
+
+.btn{
+  background-color: red;
+  display: grid;
+  place-content: center;
+  padding: 0 0.7rem;
+  color: blanchedalmond;
+  border-radius: 2px;
+  transition: 0.25s;
+}
+
+.btn:nth-child(2){
+  margin-left: 1rem;
+  padding: 0 0.8rem;
+}
+
+
+
+
